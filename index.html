@@ -3,113 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2024: Do Campo à Cidade, Colhendo Oportunidades</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        nav {
-            background-color: #333;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        nav ul li {
-            float: left;
-        }
-        nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            background-color: #111;
-        }
-        .container {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Futebol - Paixão Mundial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+    </script>
 <body>
+    <button onclick="changeFontSize('aumentar')">Aumentar</button>
+    <button onclick="changeFontSize('reduzir')">Reduzir</button><script>
+    function changeFontSize(action){
+    const elements = ['h1', 'p'];
+    elements.map(element=>{
+    
+    const selector = document.querySelector(element);
+    let value = getComputedStyle(selector).getPropertyValue('font-size');
+    value = value.replace('px', '');
+    value = action === 'aumentar' ? parseInt(value) + 1 : parseInt(value) - 1;
+    selector.style.fontSize = `${value}px`;
+    })
+    }
+    </script>
     <header>
-        <h1>Agrinho 2024: Do Campo à Cidade, Colhendo Oportunidades</h1>
+        <h1>Futebol - Paixão Mundial</h1>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#atividades">Atividades</a></li>
-            <li><a href="#galeria">Galeria</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-
-    <div class="container" id="home">
-        <h2>Bem-vindo ao Agrinho 2024!</h2>
-        <p>O Agrinho 2024 tem como tema "Do campo à cidade, colhendo oportunidades". Este programa tem como objetivo conectar jovens e adultos ao conhecimento sobre o meio rural e urbano, promovendo a educação e oportunidades de crescimento.</p>
-    </div>
-
-    <div class="container" id="sobre">
-        <h2>Sobre</h2>
-        <p>O Agrinho é um programa de responsabilidade social que busca educar sobre a importância do campo e da cidade, mostrando como ambos podem colaborar para o desenvolvimento sustentável e a geração de oportunidades.</p>
-    </div>
-
-    <div class="container" id="atividades">
-        <h2>Atividades</h2>
-        <ul>
-            <li>Palestras educacionais sobre agricultura sustentável</li>
-            <li>Oficinas de reciclagem e reutilização de materiais</li>
-            <li>Visitas a fazendas e centros urbanos</li>
-            <li>Concursos de redação e desenho sobre o tema</li>
-        </ul>
-    </div>
-
-    <div class="container" id="galeria">
-        <h2>Galeria</h2>
-        <p>Confira as fotos e vídeos das edições anteriores do Agrinho!</p>
-        <!-- Aqui você pode inserir imagens ou vídeos -->
-    </div>
-
-    <div class="container" id="contato">
-        <h2>Contato</h2>
-        <p>Para mais informações, entre em contato conosco:</p>
-        <form>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem"></textarea><br>
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
-
+    <main>
+        <section class="intro">
+            <h2>O esporte mais popular do mundo</h2>
+            <p>O futebol é um esporte amado por milhões de pessoas ao redor do planeta. Dos gramados da Europa aos campos de várzea no Brasil, a paixão pelo jogo é universal.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Soccer_ball.svg/1024px-Soccer_ball.svg.png" alt="Bola de futebol" class="img-responsive">
+        </section>
+        <section class="history">
+            <h2>História do Futebol</h2>
+            <p>O futebol moderno teve suas regras estabelecidas na Inglaterra em 1863, mas sua origem remonta a jogos antigos praticados em diversas culturas.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Maracan%C3%A3_sta.jpg" alt="Estádio Maracanã" class="img-responsive">
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Agrinho. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Futebol Fanáticos - Conteúdo sob licença Creative Commons</p>
     </footer>
 </body>
+    </script>
 </html>
+<img src="images.jpeg" alt="">
+<img src="images (1).jpeg" alt="">

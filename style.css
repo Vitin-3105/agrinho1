@@ -1,137 +1,55 @@
-/* Reset básico para garantir consistência entre navegadores */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-    padding-bottom: 60px; /* Para dar espaço ao rodapé fixo */
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    box-shadow: 0 4px 2px -2px gray;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-nav {
     background-color: #333;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 2px -2px gray;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
-    overflow: hidden;
 }
 
 nav ul li {
-    float: left;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
+    color: #fff;
     text-decoration: none;
-    transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #111;
-}
-
-.container {
+main {
     padding: 20px;
-    max-width: 1200px;
-    margin: auto;
 }
 
-.container h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    color: #4CAF50;
-}
-
-.container p {
-    margin-bottom: 1em;
-}
-
-.container ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-.container ul li {
-    margin-bottom: 0.5em;
-}
-
-form {
-    background: #fff;
-    padding: 20px;
+.noticia {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form label {
-    display: block;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form textarea {
-    height: 100px;
-    resize: vertical;
-}
-
-form input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form input[type="submit"]:hover {
-    background-color: #45a049;
+.noticia img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 10px 0;
     position: fixed;
-    bottom: 0;
     width: 100%;
-    box-shadow: 0 -4px 2px -2px gray;
+    bottom: 0;
 }
